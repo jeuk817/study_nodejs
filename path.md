@@ -36,3 +36,10 @@ path.join('/foo', 'bar', 'baz/asdf', 'quux', '..'); // '..'은 상위 디렉토�
 path.join('foo', {}, 'bar');
 // Throws 'TypeError: Path must be a string. Received {}'
 ```
+
+### __dirname
+- node에서 제공하는 node 파일의 경로를 담고 있는 변수.
+- 실행중인 node 파일의 경로를 표시한다.
+```js
+path.join(__dirname, '../public/index.html') // 현재 파일경로와 '../public/index.html'를 조합한 것
+```
